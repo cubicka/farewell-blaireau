@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 18px 65px 58px 46px;
+}
+
+.row {
+    display: flex;
+}
+
+.title {
+    flex: 0 0 auto;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b4462;
+    padding: 0 4px 12px;
+    border-bottom: solid 2px #dfe2e6;
+}
+
+.menu {
+    flex: 1 0 auto;
+}

@@ -1,0 +1,43 @@
+.wrapper {
+    flex: 0 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid 1px #d0d3d7;
+    padding: 22px 19px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b4462;
+}
+
+.charts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.legendRow {
+    display: flex;
+    padding-left: 40px;
+}
+
+.legendItem {
+    line-height: 32px;
+    flex: 1 0 0;
+}
+
+.legendIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-right: 24px;
+    /*float: left;*/
+}
+
+.legendLabel {
+    position: relative;
+    top: -10px;
+    /*float: left;*/
+}

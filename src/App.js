@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
+import {Provider} from 'react-redux'
+import createHistory from 'history/createBrowserHistory'
+import StoreCreator from './model'
+import AppRoute from './view/route'
 
-class App extends Component {
-  render() {
+const history = createHistory()
+const store = StoreCreator(history)
+
+function Root() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to Kulakan Admin</h2>
-        </div>
-      </div>
+        <Provider store={store}>
+            <AppRoute history={history} />
+        </Provider>
     );
-  }
 }
 
-export default App;
+export default Root;

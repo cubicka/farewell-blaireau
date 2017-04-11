@@ -1,0 +1,37 @@
+.wrapper {
+    height: 72px;
+    line-height: 72px;
+    background-color: #4791ef;
+    display: flex;
+    color: #fff;
+}
+
+.title {
+    flex: 1 0 0;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.menu {
+    flex: 0 0 auto;
+    display: flex;
+    margin: 0;
+    margin-right: 82px;
+    text-align: right;
+}
+
+.option {
+    cursor: pointer;
+    list-style: none;
+    flex: 1 0 auto;
+    display: block;
+    padding: 0 24px;
+}
+
+.option:hover {
+    border-bottom: solid 6px #ccc;
+}
+
+.active, .option.active:hover {
+    border-bottom: solid 6px #fff;
+}

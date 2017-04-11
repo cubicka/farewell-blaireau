@@ -1,0 +1,36 @@
+.wrapper {
+    flex: 1 0 auto;
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 150px;
+    border: solid 1px #d0d3d7;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper:first-child {
+    margin-left: 0;
+}
+
+.logo {
+    flex: 1 0 auto;
+    margin-left: 20px;
+}
+
+.note {
+    flex: 1 0 auto;
+    text-align: right;
+    margin-right: 20px;
+    color: #2b4462;
+}
+
+.val {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.label {
+    font-size: 16px;
+    margin-top: 10px;
+}

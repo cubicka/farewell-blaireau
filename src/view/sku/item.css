@@ -1,0 +1,152 @@
+.wrapper {
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #fff;
+    border: solid 1px #bdc2c8;
+    width: 280px;
+    position: relative;
+    padding-bottom: 20px;
+    flex: 1 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.header, .body {
+    padding-left: 16px;
+    /*padding-right: 16px;*/
+}
+
+.body {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #475b74;
+    margin-top: 13px;
+}
+
+.bodyEdit input {
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bodyEdit {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #475b74;
+    margin-top: 6px;
+    padding-left: 16px;
+}
+
+.row:first-child {
+    border-bottom: solid 1px #bdc2c8;
+}
+
+.headerEdit {
+    margin-bottom: 10px;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    background-image: url('https://s3-ap-southeast-1.amazonaws.com/kulakan/rokok.jpg');
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    flex: 0 0 auto;
+}
+
+.nameWrapper {
+    flex: 1 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475b74;
+    padding-left: 17px;
+    padding-top: 39px;
+}
+
+.inputName {
+    font-size: 14px;
+}
+
+.id {
+    margin-bottom: 18px;
+}
+
+.header {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #304560;
+    margin-top: 18px;
+}
+
+.colUnit {
+    flex: 4 4 0;
+    margin-right: 10px;
+}
+
+.colHarga {
+    flex: 4 4 0;
+}
+
+.colAct {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.trash, .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #ce5858;
+    cursor: pointer;
+}
+
+.pencil {
+    position: absolute;
+    top: 11px;
+    right: 52px;
+    color: #6f6f6f;
+    cursor: pointer;
+}
+
+.check {
+    position: absolute;
+    top: 11px;
+    right: 52px;
+    color: #4791ef;
+    cursor: pointer;
+}
+
+.upload {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    color: #4791ef;
+    cursor: pointer;
+    background-color: #f2f4f7;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.deleteLine {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tambahUnit {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4791ef;
+}

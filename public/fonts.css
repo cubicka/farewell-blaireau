@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 500;
+    src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 600;
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'setara-icon';
+  src:  url('fonts/setara-icon.eot?hywk3b');
+  src:  url('fonts/setara-icon.eot?hywk3b#iefix') format('embedded-opentype'),
+    url('fonts/setara-icon.ttf?hywk3b') format('truetype'),
+    url('fonts/setara-icon.woff?hywk3b') format('woff'),
+    url('fonts/setara-icon.svg?hywk3b#setara-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
