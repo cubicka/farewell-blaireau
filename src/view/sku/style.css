@@ -13,6 +13,8 @@
     color: #2b4462;
     padding: 0 4px 12px;
     border-bottom: solid 2px #dfe2e6;
+    display: block;
+    margin-bottom: 13px;
 }
 
 .menu {

@@ -1,0 +1,86 @@
+.wrapper {
+    position: relative;
+}
+
+.body {
+    margin-bottom: 10px;
+}
+
+.row, .header {
+    display: flex;
+}
+
+.colSKU, .colName, .colPrice1, .colPrice2, .colPrice3 {
+    flex: 9 0 0;
+}
+
+.colRest {
+    flex: 36 0 0;
+}
+
+.colAction {
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.header .colSKU, .header .colName, .header .colPrice1, .header .colPrice2, .header .colPrice3, .header .colImage {
+    text-indent: 10px;
+}
+
+.colAction .deleteBtn {
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.row input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    text-indent: 10px;
+}
+
+.addBtn {
+    display: inline-block;
+    background-color: #4ea65f;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.inputAdd {
+    box-sizing: border-box;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    text-indent: 10px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b4462;
+    padding: 0 4px 12px;
+    border-bottom: solid 2px #dfe2e6;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.saveBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4ea65f;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
