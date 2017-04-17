@@ -80,10 +80,23 @@
     margin-right: 10px;
     font-size: 15px;
     position: relative;
-    top: -2px;
+    top: -12px;
 }
 
 .pagination .left, .pagination .right {
     font-size: 20px;
     cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+.inputFilter {
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    text-indent: 10px;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
 }

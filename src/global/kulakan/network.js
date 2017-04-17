@@ -1,10 +1,16 @@
 import Storage from './storage'
 import config from '../../config'
+import push from 'react-router-redux'
 
 const baseUrl = config.api
 
-function CheckStatus(response) {
+function CheckStatus(response, dispatch) {
     if (!response.ok) {
+        if (response.status === 403) {
+            Storage.Save('token', '')
+            return dispatch(push('/signin'))
+        }
+
         return Promise.reject(new Error(response.statusText || 'Status not OK'))
     }
 
@@ -15,7 +21,7 @@ function ParseJSON(response) {
     return response.json()
 }
 
-function Fetch(url, opts) {
+function Fetch(dispatch, url, opts) {
     return fetch(baseUrl + url, {
         ...opts,
         credentials: 'include',
@@ -25,7 +31,7 @@ function Fetch(url, opts) {
             'x-access-token': Storage.Load('token'),
         },
     })
-    .then(CheckStatus)
+    .then(CheckStatus, dispatch)
     .then(ParseJSON)
 }
 
@@ -35,15 +41,27 @@ function QueryParams(params) {
         .join('&')
 }
 
-export function Get(url, opts) {
-    return Fetch(url + '?' + QueryParams(opts), {
+export function Get(dispatch, url, opts = {}) {
+    return Fetch(dispatch, url + '?' + QueryParams(opts), {
         method: 'get',
     })
 }
 
-export function Post(url, body) {
-    return Fetch(url, {
+export function Post(dispatch, url, body) {
+    return Fetch(dispatch, url, {
         body: JSON.stringify(body),
         method: 'post',
     })
+}
+
+export function Upload(url, formData) {
+    return fetch(baseUrl + url, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'x-access-token': Storage.Load('token'),
+        },
+    })
+    .then(CheckStatus)
+    .then(ParseJSON)
 }

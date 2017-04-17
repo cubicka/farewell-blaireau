@@ -4,14 +4,15 @@ import thunk from 'redux-thunk'
 import {ActionMiddleware, ReducerCreator} from 'kulakan/model'
 import Action from '../action'
 
-// import createLogger from 'redux-logger'
+// import {createLogger} from 'redux-logger'
 // const logger = createLogger()
 
+import sku from './sku'
 import signIn from './view-signIn'
 import page from './view-page'
 
 const reducerSpecs = {
-    page, signIn,
+    page, signIn, sku,
 }
 
 const reducers = ReducerCreator(reducerSpecs)
@@ -25,6 +26,6 @@ export default (history) => {
             router: routerReducer,
         }),
         applyMiddleware(thunk, ActionMiddleware(Action), routeWithHistory)
-        // applyMiddleware(thunk, logger, routeMiddle)
+        // applyMiddleware(thunk, ActionMiddleware(Action), logger, routeWithHistory)
     )
 }

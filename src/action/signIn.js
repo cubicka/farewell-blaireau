@@ -15,7 +15,7 @@ function SignIn() {
         }
 
         dispatch(["/signIn/loading/start"])
-        return Post('/auth/admin/sign-in', {username, password})
+        return Post(dispatch, '/auth/admin/sign-in', {username, password})
         .then((result) => {
             Storage.Save('token', result.token)
             dispatch(push("/dashboard"))

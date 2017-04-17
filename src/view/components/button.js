@@ -1,7 +1,7 @@
 import React from 'react'
 import Icon from 'react-fontawesome'
 
-export function WithLoading({isLoading, text, loadingText, onClick, ...props}) {
+export function WithLoading({isLoading, text, loadingText, ...props}) {
     return (
         <div {...props}>
             {isLoading && <Icon name={'spinner'} className={'fa-spin'} style={{marginRight: 7}} />}

@@ -1,4 +1,5 @@
 import React from 'react'
+import WithActions from '../components/withActions'
 import Page from '../components/pageWithHeader'
 import EditForm from './editForm'
 import EditImage from './editImage'
@@ -7,13 +8,15 @@ import style from './style.css'
 
 function SKUPage() {
     return (
-        <Page header={'sku'} className={style.wrapper}>
-            <div className={style.wrapper}>
-                <EditForm />
-                <EditImage />
-                <List />
-            </div>
-        </Page>
+        <WithActions actions={[["sku/list"], ["sku/images"]]}>
+            <Page header={'sku'} className={style.wrapper}>
+                <div className={style.wrapper}>
+                    <EditForm />
+                    <EditImage />
+                    <List />
+                </div>
+            </Page>
+        </WithActions>
     )
 }
 
