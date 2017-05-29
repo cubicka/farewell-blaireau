@@ -1,13 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { PieChart, Pie, Cell } from 'recharts'
 import style from './orderOverview.css'
 
-// const  = Recharts
-const data = [{name: 'Group A', value: 400}, {name: 'Group B', value: 300},
-              {name: 'Group C', value: 300}, {name: 'Group D', value: 200}]
 const COLORS = ['#00bae2', '#efb150', '#8b89d5', '#ff646f']
 
-function SimplePieChart() {
+function SimplePieChart({data}) {
     return (
         <PieChart width={500} height={460} onMouseEnter={() => {}}>
             <Pie
@@ -36,25 +33,37 @@ function Legends({idx, name}) {
     )
 }
 
-function OrderOverview() {
-    return (
-        <div className={style.wrapper}>
-            <div className={style.title}>Persentase Order</div>
-            <div className={style.charts}>
-                <SimplePieChart />
-            </div>
-            <div className={style.legendWrapper}>
-                <div className={style.legendRow}>
-                    <Legends idx={0} name={'Order Diterima'} />
-                    <Legends idx={1} name={'Order Diproses'} />
+class OrderOverview extends Component {
+    shouldComponentUpdate(nextProps) {
+        const attrs = ['created', 'accepted', 'delivered', 'cancelled']
+        return attrs.reduce((result, attr) => {
+            return result || nextProps[attr] !== this.props[attr]
+        }, false)
+    }
+    render() {
+        const {created, accepted, delivered, cancelled} = this.props
+        const data = [{name: 'Diterima', value: created}, {name: 'Diproses', value: accepted},
+                      {name: 'Dikirm', value: delivered}, {name: 'Ditolak', value: cancelled}]
+
+        return (
+            <div className={style.wrapper}>
+                <div className={style.title}>Persentase Order</div>
+                <div className={style.charts}>
+                    <SimplePieChart data={data} />
                 </div>
-                <div className={style.legendRow}>
-                    <Legends idx={2} name={'Order Dikirim'} />
-                    <Legends idx={3} name={'Order Ditolak'} />
+                <div className={style.legendWrapper}>
+                    <div className={style.legendRow}>
+                        <Legends idx={0} name={'Order Diterima'} />
+                        <Legends idx={1} name={'Order Diproses'} />
+                    </div>
+                    <div className={style.legendRow}>
+                        <Legends idx={2} name={'Order Dikirim'} />
+                        <Legends idx={3} name={'Order Ditolak'} />
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default OrderOverview

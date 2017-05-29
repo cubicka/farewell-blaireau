@@ -16,5 +16,54 @@
 }
 
 .menu {
-    flex: 0 0 auto;
+    flex: 1 0 auto;
+    text-align: right;
+}
+
+.loading {
+    background-color: rgb(239, 177, 80);
+    display: block;
+    margin-top: 10px;
+}
+
+.date {
+    border: solid 1px #aaa;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+}
+
+.dateLabel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #475b74;
+    margin-right: 8px;
+    margin-left: 15px;
+}
+
+.printBtn, .calculateBtn{
+    padding: 10px 18px;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.printBtn{
+    background-color: #4ea65f;
+    border: solid 1px #4ea65f;
+}
+
+.printBtn:hover{
+    background-color: #3e964f;
+}
+
+.calculateBtn{
+    background-color: #4791ef;
+    border: solid 1px #4791ef;
+}
+.calculateBtn:hover{
+    background-color: #3781df;
 }

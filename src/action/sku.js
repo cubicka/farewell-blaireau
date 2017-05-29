@@ -123,6 +123,7 @@ function UploadImage(id, name) {
     return (dispatch, getState) => {
         const form = document.getElementById(name);
         const formData = new FormData(form);
+
         // dispatch(['/sku/view/images/update', {isLoading: true}])
         return Upload('/admin/katalog/' + id.toString() + '/updateImage', formData)
         .then((result) => {
@@ -181,7 +182,6 @@ function SaveSKU() {
             alert('Sukses mengubah data item.')
         })
         .catch((err) => {
-            console.log('err', err)
             dispatch(['/sku/view/form/update', {isSaving: false}])
             alert('Gagal mengubah data item.')
         })

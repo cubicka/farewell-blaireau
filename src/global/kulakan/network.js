@@ -31,7 +31,7 @@ function Fetch(dispatch, url, opts) {
             'x-access-token': Storage.Load('token'),
         },
     })
-    .then(CheckStatus, dispatch)
+    .then((response) => (CheckStatus(response, dispatch)))
     .then(ParseJSON)
 }
 
@@ -39,6 +39,27 @@ function QueryParams(params) {
     return Object.keys(params)
         .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
         .join('&')
+}
+
+export function BasicGet(dispatch, url, opts) {
+    return fetch(baseUrl + url + '?' + QueryParams(opts), {
+        method: 'get',
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'x-access-token': Storage.Load('token'),
+        },
+    })
+    .then((response) => (CheckStatus(response, dispatch)))
+    .then(response => response.blob())
+    .then(blob => {
+        var url = window.URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = "report.xlsx";
+        a.click();
+    });
 }
 
 export function Get(dispatch, url, opts = {}) {

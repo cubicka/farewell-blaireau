@@ -1,8 +1,21 @@
 import React from 'react'
-import Icon from 'react-fontawesome'
+import {GetAttrs, ToPrice, ToTitleCase} from 'kulakan/util'
 import style from './itemTable.css'
 
-function ItemTable() {
+function Item({item}) {
+    const {name, unit, totalPrice} = GetAttrs(item, ['name', 'unit', 'totalPrice'])
+
+    return (
+        <div className={style.row}>
+            <span className={style.colNama}>{ToTitleCase(name)}</span>
+            <span className={style.colUnit}>{ToTitleCase(unit)}</span>
+            <span className={style.colHarga}>{ToPrice(totalPrice)}</span>
+        </div>
+    )
+}
+
+function ItemTable({items}) {
+    const itemsRendered = items.map((item, idx) => (<Item key={idx} item={item} />))
     return (
         <div className={style.wrapper}>
             <span className={style.title}>Item Terlaris</span>
@@ -10,45 +23,9 @@ function ItemTable() {
                 <span className={style.colNama}>Nama Item</span>
                 <span className={style.colUnit}>Satuan</span>
                 <span className={style.colHarga}>Harga</span>
-                <span className={style.colManage}>Manage</span>
             </div>
             <div className={style.body}>
-                <div className={style.row}>
-                    <span className={style.colNama}>Rokok Sampoerna</span>
-                    <span className={style.colUnit}>Pack</span>
-                    <span className={style.colHarga}>60.000</span>
-                    <span className={style.colManage}>
-                        <Icon name={'pencil'} className={style.editBtn} />
-                        <Icon name={'close'} className={style.deleteBtn} />
-                    </span>
-                </div>
-                <div className={style.row}>
-                    <span className={style.colNama}>Rokok Sampoerna</span>
-                    <span className={style.colUnit}>Bungkus</span>
-                    <span className={style.colHarga}>12.000</span>
-                    <span className={style.colManage}>
-                        <Icon name={'pencil'} className={style.editBtn} />
-                        <Icon name={'close'} className={style.deleteBtn} />
-                    </span>
-                </div>
-                <div className={style.row}>
-                    <span className={style.colNama}>Rokok Sampoerna</span>
-                    <span className={style.colUnit}>Pack</span>
-                    <span className={style.colHarga}>12.000</span>
-                    <span className={style.colManage}>
-                        <Icon name={'pencil'} className={style.editBtn} />
-                        <Icon name={'close'} className={style.deleteBtn} />
-                    </span>
-                </div>
-                <div className={style.row}>
-                    <span className={style.colNama}>Rokok Sampoerna</span>
-                    <span className={style.colUnit}>Pack</span>
-                    <span className={style.colHarga}>12.000</span>
-                    <span className={style.colManage}>
-                        <Icon name={'pencil'} className={style.editBtn} />
-                        <Icon name={'close'} className={style.deleteBtn} />
-                    </span>
-                </div>
+                {itemsRendered}
             </div>
         </div>
     )

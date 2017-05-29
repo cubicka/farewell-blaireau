@@ -7,12 +7,14 @@ import Action from '../action'
 // import {createLogger} from 'redux-logger'
 // const logger = createLogger()
 
+import dashboard from './dashboard'
+import retail from './retail'
 import sku from './sku'
 import signIn from './view-signIn'
 import page from './view-page'
 
 const reducerSpecs = {
-    page, signIn, sku,
+    dashboard, page, retail, signIn, sku,
 }
 
 const reducers = ReducerCreator(reducerSpecs)

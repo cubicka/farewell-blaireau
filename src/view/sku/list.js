@@ -16,7 +16,6 @@ function Item({item}) {
 }
 
 function SKU({currentPage, filter, list, pageTotal, EditFilter, NextPage, PrevPage}) {
-    console.log('list', filter, list)
     const itemsRendered = list.map((item) => {
         return <Item key={item.get('id')} item={item} />
     })

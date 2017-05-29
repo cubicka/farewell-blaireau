@@ -35,17 +35,17 @@
 }
 
 .colNama {
-    flex: 15 0 0;
-}
-
-.colWaktu {
     flex: 12 0 0;
 }
 
+.colWaktu {
+    flex: 15 0 0;
+}
+
 .colTotal {
-    flex: 7 0 0;
+    flex: 8 0 0;
 }
 
 .colStatus {
-    flex: 7 0 0;
+    flex: 8 0 0;
 }

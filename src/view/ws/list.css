@@ -1,0 +1,102 @@
+.wrapper {
+    /*margin-top: 50px;*/
+    position: relative;
+}
+
+.listWrapper {
+    background-color: #fff;
+    padding: 13px 24px;
+    border-radius: 4px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b4462;
+    padding: 0 4px 12px;
+    border-bottom: solid 2px #dfe2e6;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.body {
+    margin-bottom: 10px;
+}
+
+.row, .header {
+    display: flex;
+}
+
+.header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b4462;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.colSKU {
+    flex: 7 0 0;
+}
+
+.colName {
+    flex: 9 0 0;
+}
+
+.colPrice1, .colPrice2, .colPrice3 {
+    flex: 5 0 0;
+}
+
+.colRest {
+    flex: 36 0 0;
+}
+
+.colAction {
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.row {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px #d0d3d7;
+}
+
+.row:first-child {
+    border-top: solid 1px #d0d3d7;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pagination .note {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    position: relative;
+    top: -12px;
+}
+
+.pagination .left, .pagination .right {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+.inputFilter {
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    text-indent: 10px;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}

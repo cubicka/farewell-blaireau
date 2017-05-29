@@ -1,10 +1,11 @@
 import {Map} from 'immutable'
 
+import dashboard from './dashboard'
 import signIn from './sign-in'
 import sku from './sku'
 
 const specs = {
-    signIn, sku,
+    dashboard, signIn, sku,
 }
 
 function GetDeep(paths) {
