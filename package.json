@@ -63,7 +63,7 @@
   },
   "scripts": {
     "start": "PORT=3100 node scripts/start.js",
-    "build": "node --max_old_space_size=2048 scripts/build.js",
+    "build": "node --max_old_space_size=1024 scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {

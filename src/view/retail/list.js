@@ -3,9 +3,9 @@ import Om from '../om'
 import Icon from 'react-fontawesome'
 import style from './list.css'
 
-function User({user}) {
+function User({user, ToDetail}) {
     return (
-        <div className={style.row}>
+        <div className={style.row} onClick={ToDetail(user.get('userID'))}>
             <span className={style.colSKU}>{user.get('shop')}</span>
             <span className={style.colName}>{user.get('address')}</span>
             <span className={style.colSKU}>{'0' + user.get('phone')}</span>
@@ -15,9 +15,9 @@ function User({user}) {
     )
 }
 
-function List({count, currentPage, isFetching, limit, list, name, total, EditFilter, NextPage, PrevPage}) {
+function List({count, currentPage, isFetching, limit, list, name, total, EditFilter, NextPage, PrevPage, ToDetail}) {
     const usersRendered = list.map((user) => {
-        return <User key={user.get('id')} user={user} />
+        return <User key={user.get('id')} user={user} ToDetail={ToDetail} />
     })
 
     const totalPage = Math.ceil(count/limit)
@@ -63,6 +63,7 @@ const actions = {
     NextPage: () => ([['/retail/nextPage'], ['retail/list']]),
     PrevPage: () => ([['/retail/prevPage'], ['retail/list']]),
     EditFilter: (e) => (['retail/editFilter', e.target.value]),
+    ToDetail: (id) => () => (['push', `/retail-detail/${id}`])
 }
 
 export default Om(states, actions)(List)

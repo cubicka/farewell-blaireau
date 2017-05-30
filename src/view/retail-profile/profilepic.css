@@ -1,0 +1,28 @@
+.wrapper{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.img{ 
+    width: 75%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.chngeBtn{
+    width: 75%;
+    font-size: 16px;
+    font-weight: 500;
+    margin:auto;
+    padding: 7px 0px;
+    border-radius: 4px;
+    border: solid 1px #9f9f9f;
+    color: #475b74;
+    cursor:  pointer;
+    display: block;
+}
+.chngeBtn:hover{
+    background-color: #4791ef;
+    border: solid 1px #4791ef;
+    color: #fff;
+}

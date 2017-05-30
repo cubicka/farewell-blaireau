@@ -43,7 +43,6 @@ function Profile(id) {
             dispatch(['/ws/update', {payload: {isFetching: false}}])
             if (response.length === 0) return
 
-            console.log('pr', response)
             dispatch(['/ws/update', {payload: {
                 profile: response[0],
                 profileFound: true,
@@ -73,7 +72,6 @@ function ChangePassword(id) {
     return (dispatch, getState) => {
         const password = getState().ws.get('password')
 
-        console.log('p', password)
         if (password === '') {
             alert('Password tidak boleh kosong.')
             return
