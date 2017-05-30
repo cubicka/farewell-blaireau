@@ -1,12 +1,14 @@
 import {FnsCreator} from 'kulakan/util'
 import {push} from 'react-router-redux'
 import dashboard from './dashboard'
+import misc from './misc'
 import retail from './retail'
 import signIn from './signIn'
 import sku from './sku'
+import ws from './ws'
 
 const specs = {
-    dashboard, retail, signIn, sku,
+    dashboard, misc, retail, signIn, sku, ws,
 }
 
 function ActionCreator(dicts) {

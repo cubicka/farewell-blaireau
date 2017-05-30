@@ -4,6 +4,7 @@ import Storage from 'kulakan/storage'
 import SignInPage from './sign-in'
 import DashboardPage from './dashboard'
 import WSPage from './ws'
+import WSProfilePage from './ws-profile'
 import RetailPage from './retail'
 import SKUPage from './sku'
 
@@ -28,6 +29,7 @@ function Root({history}) {
             <Switch>
                 <PrivateRoute path="/dashboard" component={DashboardPage} />
                 <PrivateRoute path="/ws" component={WSPage} />
+                <PrivateRoute path="/ws-detail/:id" component={WSProfilePage} />
                 <PrivateRoute path="/retail" component={RetailPage} />
                 <PrivateRoute path="/sku" component={SKUPage} />
                 <Route path="*" component={SignInPage} />

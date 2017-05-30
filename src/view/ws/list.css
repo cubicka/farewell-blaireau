@@ -17,6 +17,7 @@
     border-bottom: solid 2px #dfe2e6;
     display: block;
     margin-bottom: 13px;
+    position: relative;
 }
 
 .body {
@@ -36,15 +37,20 @@
 }
 
 .colSKU {
-    flex: 7 0 0;
+    flex: 9 0 0;
+    margin-left: 10px;
 }
 
 .colName {
-    flex: 9 0 0;
+    flex: 7 0 0;
 }
 
 .colPrice1, .colPrice2, .colPrice3 {
     flex: 5 0 0;
+}
+
+.colAddress {
+    flex: 25 0 0;
 }
 
 .colRest {
@@ -57,13 +63,17 @@
 }
 
 .row {
-    height: 40px;
     line-height: 40px;
     border-bottom: solid 1px #d0d3d7;
+    cursor: pointer;
 }
 
 .row:first-child {
     border-top: solid 1px #d0d3d7;
+}
+
+.row:hover {
+    background-color: #eee;
 }
 
 .pagination {

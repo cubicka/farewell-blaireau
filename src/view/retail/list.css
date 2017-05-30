@@ -17,6 +17,7 @@
     border-bottom: solid 2px #dfe2e6;
     display: block;
     margin-bottom: 13px;
+    position: relative;
 }
 
 .body {
@@ -36,11 +37,11 @@
 }
 
 .colSKU {
-    flex: 7 0 0;
+    flex: 5 0 0;
 }
 
 .colName {
-    flex: 9 0 0;
+    flex: 20 0 0;
 }
 
 .colPrice1, .colPrice2, .colPrice3 {
@@ -57,9 +58,13 @@
 }
 
 .row {
-    height: 40px;
     line-height: 40px;
     border-bottom: solid 1px #d0d3d7;
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: #eee;
 }
 
 .row:first-child {

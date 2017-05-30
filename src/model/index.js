@@ -8,13 +8,15 @@ import Action from '../action'
 // const logger = createLogger()
 
 import dashboard from './dashboard'
+import misc from './misc'
 import retail from './retail'
 import sku from './sku'
 import signIn from './view-signIn'
 import page from './view-page'
+import ws from './ws'
 
 const reducerSpecs = {
-    dashboard, page, retail, signIn, sku,
+    dashboard, misc, page, retail, signIn, sku, ws,
 }
 
 const reducers = ReducerCreator(reducerSpecs)

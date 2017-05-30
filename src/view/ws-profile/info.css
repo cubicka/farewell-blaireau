@@ -1,0 +1,143 @@
+.wrapper{
+    margin-top: 35px;  
+    position: relative; 
+}
+
+.borderLeft{
+    border-left: 1px solid #d0d3d7;
+}
+.marginLine{
+    margin-left: 25px;
+}
+
+.wrapperLeft {
+    margin-right: 20px;
+}
+
+.head{
+    font-size: 18px;
+    font-weight: 500;
+    color: #4791ef;
+    margin-bottom: 20px;
+}
+.btnWrapper {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-weight: 500;
+    color: #475b74;
+}
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: solid 1px #9f9f9f;
+    font-weight: 500;
+    cursor:  pointer;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: #4791ef;
+    border: solid 1px #4791ef;
+    color: #fff;
+}
+
+
+.body{
+    display: flex;
+}
+
+.left{
+    flex:  1 1 0;
+    margin-right: 25px;
+}
+
+.right{
+    flex:  1 1 0;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 600;
+    color: #475b74;
+    padding-bottom: 6px;
+}
+
+.info{
+    font-size: 16px;
+    color: #7a889a;
+    margin-bottom: 25px;
+}
+
+.space {
+    height: 20px;
+}
+
+.chngePassBtn {
+    border-radius: 4px;
+    background-color: #4ea65f;
+    display: inline-block;
+    color: #fff;
+    padding: 8px 15px;
+    cursor:  pointer;
+}
+
+.chngeBtn {
+    background-color: #4ea65f;
+    width: 150px;
+    font-size: 16px;
+    margin:auto;
+    padding: 7px 0px;
+    border-radius: 4px;
+    border: solid 1px #9f9f9f;
+    color: #475b74;
+    cursor:  pointer;
+}
+
+.password{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #9f9f9f;
+    color: #0f0f0f;
+    width: 230px;
+}
+
+.btnSave {
+    background-color: #4ea65f;
+    border: none;
+    color: #fff;
+}
+
+.btnSave:hover {
+    background-color: #4ea65f;
+    border: none;
+}
+
+.btnBatal {
+    background-color: rgb(255, 100, 111);
+    border: none;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.btnBatal:hover {
+    background-color: rgb(255, 100, 111);
+    border: none;
+}
+
+.info input{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #9f9f9f;
+    color: #0f0f0f;
+    width: 230px;
+}
+
+.dropdownWrapper{
+    display: inline-block;
+    position: relative;
+}
+

@@ -79,3 +79,56 @@ export function ToEndOfDay(date) {
 
     return ToStartOfDay(d)
 }
+
+export function TimeFormatter(time){
+    const monthList = ['Januari', 'Febuari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+    const dayList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+    const timesplitted = time.split('T')
+    const currentTime = new Date()
+
+    const year = parseInt(timesplitted[0].split('-')[0], 10)
+    const month = parseInt(timesplitted[0].split('-')[1], 10)
+    const date = parseInt(timesplitted[0].split('-')[2], 10)
+
+    const hourscnd = timesplitted[1].split('+')
+    const hour = parseInt(hourscnd[0].split(':')[0], 10)
+    const hourString = hourscnd[0].split(':')[0]
+    const min = parseInt(hourscnd[0].split(':')[1], 10)
+    const minString = hourscnd[0].split(':')[1]
+
+    const monthString = monthList[month - 1]
+    const yeardate = new Date(year, month-1, date, hour, min)
+    const dayString = dayList[yeardate.getDay()]
+
+    function a () {
+        const diff = currentTime - yeardate
+        if (diff / 31556952000 >= 1)
+            return Math.floor(diff / 31556952000) + " tahun yang lalu"
+        if (diff / 2629746000 >= 1)
+            return Math.floor(diff / 2629746000) + " bulan yang lalu"
+        if (diff / 604800000 >= 1)
+            return Math.floor(diff / 604800000) + " minggu yang lalu"
+        if (diff / 86400000 >= 1)
+            return Math.floor(diff / 86400000) + " hari yang lalu"
+        if (diff / 3600000 >= 1)
+            return Math.floor(diff / 3600000) + " jam yang lalu"
+        if (diff / 60000 >= 1)
+            return Math.floor(diff / 60000) + " menit yang lalu"
+        return 0
+    }
+
+    const additional = a()
+    const completeTime = {
+        time : yeardate,
+        min : minString,
+        hour : hourString,
+        date : date,
+        month : month,
+        year : year,
+        dayName : dayString,
+        monthName :monthString,
+        additional : additional
+    }
+
+    return completeTime;
+}

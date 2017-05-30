@@ -9,9 +9,10 @@ function MenuItem({text, isActive, ...rest}) {
 
 const menus = [
     ['dashboard', 'Beranda'],
-    ['ws', 'WS'],
-    ['retail', 'Retail'],
-    ['sku', 'SKU Manajemen'],
+    ['ws', 'List WS'],
+    // ['verifikasi', 'Verifikasi'],
+    ['retail', 'List Retail'],
+    ['sku', 'Manajemen SKU'],
 ]
 
 function Header({header, PickHeader}) {
@@ -21,7 +22,7 @@ function Header({header, PickHeader}) {
 
     return (
         <div className={style.wrapper}>
-            <span className={style.title}>KULAKAN</span>
+            <span className={style.title}>RULO</span>
             <ul className={style.menu}>{menusRendered}</ul>
         </div>
     )

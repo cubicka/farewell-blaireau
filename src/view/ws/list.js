@@ -1,41 +1,71 @@
 import React from 'react'
 import Icon from 'react-fontawesome'
+import {GetAttrs} from 'kulakan/util'
+import Om from '../om'
 import style from './list.css'
 
-// function Item({item}) {
-//     return (
-//         <div className={style.row}>
-//             <span className={style.colSKU}></span>
-//             <span className={style.colName}></span>
-//             <span className={style.colPrice1}></span>
-//         </div>
-//     )
-// }
+function Item({seller, ToDetail}) {
+    const {shop, city, address, phone} = GetAttrs(seller, ['shop', 'city', 'address', 'phone'])
 
-function List() {
-    // const itemsRendered = list.map((item) => {
-    //     return <Item key={item.get('id')} item={item} />
-    // })
+    return (
+        <div className={style.row} onClick={ToDetail(seller.get('userID'))}>
+            <span className={style.colSKU}>{shop}</span>
+            <span className={style.colAddress}>{address}</span>
+            <span className={style.colName}>{city.get('Name')}</span>
+            <span className={style.colName}>{'0' + phone}</span>
+        </div>
+    )
+}
+
+function List({currentPage, isFetching, limit, list, name, count, EditFilter, NextPage, PrevPage, ToDetail}) {
+    const itemsRendered = list.map((item) => {
+        return <Item key={item.get('id')} seller={item} ToDetail={ToDetail} />
+    })
+
+    const totalPage = Math.ceil(count/limit)
 
     return (
         <div className={style.wrapper}>
-            <span className={style.title}>WS User List</span>
+            <span className={style.title}>
+                WS User List
+                {
+                    isFetching &&
+                    <Icon name={'spinner'} className={'fa-spin'} style={{margin: 10, position: 'absolute', top: -10, left: -40}} />
+                }
+            </span>
             <div className={style.listWrapper}>
                 <div className={style.header}>
-                    <span className={style.colSKU}>SKU</span>
-                    <span className={style.colName}>Nama Item</span>
-                    <span className={style.colPrice1}>Harga</span>
+                    <span className={style.colSKU}>Nama Toko</span>
+                    <span className={style.colAddress}>Alamat</span>
+                    <span className={style.colName}>Kota</span>
+                    <span className={style.colName}>No Telp</span>
                 </div>
-                <div className={style.body}></div>
+                <div className={style.body}>{itemsRendered}</div>
             </div>
             <span className={style.pagination}>
-                <Icon name={'angle-double-left'} className={style.left} onClick={() => {}} />
-                <span className={style.note}>Page 1 of 7</span>
-                <Icon name={'angle-double-right'} className={style.left} onClick={() => {}} />
-                <input type={'text'} placeholder={'SKU / Nama Item'} className={style.inputFilter} value={''} onChange={() => {}} />
+                <Icon name={'angle-double-left'} className={style.left} onClick={PrevPage} />
+                <span className={style.note}>Page {currentPage} of {totalPage}</span>
+                <Icon name={'angle-double-right'} className={style.left} onClick={NextPage} />
+                <input type={'text'} placeholder={'Nama Toko'} className={style.inputFilter} value={name} onChange={EditFilter} />
             </span>
         </div>
     )
 }
 
-export default List
+const states = {
+    isFetching: '/ws/isFetching',
+    list: '/ws/list',
+    count: '/ws/total',
+    currentPage: '/ws/currentPage',
+    limit: '/ws/limit',
+    name: '/ws/name',
+}
+
+const actions = {
+    EditFilter: (e) => (['ws/editFilter', e.target.value]),
+    NextPage: () => ([['/ws/nextPage'], ['ws/ws']]),
+    PrevPage: () => ([['/ws/prevPage'], ['ws/ws']]),
+    ToDetail: (id) => () => (['push', `/ws-detail/${id}`])
+}
+
+export default Om(states, actions)(List)
