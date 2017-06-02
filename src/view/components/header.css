@@ -26,6 +26,7 @@
     flex: 1 0 auto;
     display: block;
     padding: 0 24px;
+    position: relative;
 }
 
 .option:hover {
@@ -34,4 +35,16 @@
 
 .active, .option.active:hover {
     border-bottom: solid 6px #fff;
+}
+
+.counter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+    border-radius: 12px;
+    background-color: #eee;
+    color: #666;
+    text-align: center;
 }

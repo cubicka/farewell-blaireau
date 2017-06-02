@@ -11,9 +11,11 @@ function WS() {
         .then((response) => {
             dispatch(['/ws/update', {
                 payload: {
-                    list: response.sellers,
                     total: response.count,
                 }
+            }])
+            dispatch(['/ws/updateList0', {
+                payload: response.sellers,
             }])
             dispatch(['/ws/update', {payload: {isFetching: false}}])
         })
@@ -174,14 +176,56 @@ function Save(id) {
     }
 }
 
+function countVerification() {
+    return (dispatch, getState) => {
+        return Get(dispatch, '/admin/ws/verification-count')
+        .then((response) => {
+            dispatch(['/ws/update', {payload: {verificationCount: response.count}}])
+        })
+        .catch(() => {})
+    }
+}
+
+function verification() {
+    return (dispatch, getState) => {
+        dispatch(['/ws/update', {payload: {isFetching: true}}])
+        return Get(dispatch, '/admin/ws/need-verification')
+        .then((response) => {
+            dispatch(['/ws/update', {payload: {
+                isFetching: false,
+            }}])
+            dispatch(['/ws/updateList', {payload: response.sellers}])
+        })
+        .catch(() => {
+            dispatch(['/ws/update', {payload: {isFetching: false}}])
+        })
+    }
+}
+
+function verify(id, verified) {
+    return (dispatch, getState) => {
+        dispatch(['/ws/update', {payload: {isVerifying: {[id]: verified ? 1 : -1}}}])
+        return Post(dispatch, `/admin/ws/${id}/verify`, {verified})
+        .then((response) => {
+            dispatch(['/ws/update', {payload: {isVerifying: {[id]: verified ? 2 : -2}}}])
+        })
+        .catch(() => {
+            dispatch(['/ws/update', {payload: {isVerifying: {[id]: 0}}}])
+        })
+    }
+}
+
 export default {
     changePassword: ChangePassword,
+    countVerification,
     editFilter: EditFilter,
     pickBank: PickBank,
     pickCity: PickCity,
     pickState: PickState,
     profile: Profile,
     save: Save,
-    ws: WS,
     uploadImage: UploadImage,
+    verification,
+    verify,
+    ws: WS,
 }

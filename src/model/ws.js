@@ -1,3 +1,4 @@
+import {fromJS} from 'immutable'
 import {GetAttrs} from 'kulakan/util'
 
 const initialState = {
@@ -15,6 +16,9 @@ const initialState = {
     isSaving: false,
     password: '',
     info: {},
+    verificationCount: 0,
+    verificationList: [],
+    isVerifying: {},
 }
 
 const events = {
@@ -36,6 +40,8 @@ const events = {
         })
     },
     update: (state, action) => (state.mergeDeep(action.payload)),
+    updateList: (state, action) => (state.update('verificationList', (verificationList) => fromJS(action.payload))),
+    updateList0: (state, action) => (state.update('list', (verificationList) => fromJS(action.payload))),
 }
 
 export default {

@@ -1,0 +1,172 @@
+.wrapper {
+    /*margin-top: 50px;*/
+    position: relative;
+}
+
+.listWrapper {
+    background-color: #fff;
+    padding: 13px 24px;
+    border-radius: 4px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b4462;
+    padding: 0 4px 12px;
+    border-bottom: solid 2px #dfe2e6;
+    display: block;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.body {
+    margin-bottom: 10px;
+}
+
+.row, .header {
+    display: flex;
+}
+
+.header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b4462;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.colSKU {
+    flex: 9 0 0;
+    margin-left: 10px;
+}
+
+.colName {
+    flex: 7 0 0;
+}
+
+.colPrice1, .colPrice2, .colPrice3 {
+    flex: 5 0 0;
+}
+
+.colAddress {
+    flex: 25 0 0;
+}
+
+.colRest {
+    flex: 36 0 0;
+}
+
+.colAction {
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.row {
+    line-height: 40px;
+    border-bottom: solid 1px #d0d3d7;
+    cursor: pointer;
+}
+
+.row:first-child {
+    border-top: solid 1px #d0d3d7;
+}
+
+.row:hover {
+    background-color: #eee;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pagination .note {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    position: relative;
+    top: -12px;
+}
+
+.pagination .left, .pagination .right {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+.inputFilter {
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    text-indent: 10px;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemWrapper {
+    flex: 0 0 45%;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: solid 0.95px #d0d3d7;
+    padding: 20px;
+}
+
+.info{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b4462;
+    padding-bottom: 6px;
+}
+
+.icon {
+    margin-right: 10px;
+    float: left;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: solid 1px #9f9f9f;
+    font-weight: 500;
+    cursor:  pointer;
+    display: inline-block;
+}
+
+.btnPos {
+    background-color: #4ea65f;
+    border: none;
+    color: #fff;
+}
+
+.btnPos:hover {
+    background-color: #3e964f;
+}
+
+.btnNeg {
+    background-color: rgb(255, 100, 111);
+    border: none;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.btnNeg:hover {
+    background-color: rgb(239, 84, 95);
+}

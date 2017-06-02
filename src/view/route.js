@@ -7,6 +7,7 @@ import WSPage from './ws'
 import WSProfilePage from './ws-profile'
 import RetailPage from './retail'
 import RetailProfilePage from './retail-profile'
+import VerificationPage from './verification'
 import SKUPage from './sku'
 
 function PrivateRoute({component: Component, ...rest}) {
@@ -34,6 +35,7 @@ function Root({history}) {
                 <PrivateRoute path="/retail" component={RetailPage} />
                 <PrivateRoute path="/retail-detail/:id" component={RetailProfilePage} />
                 <PrivateRoute path="/sku" component={SKUPage} />
+                <PrivateRoute path="/verification" component={VerificationPage} />
                 <Route path="*" component={SignInPage} />
             </Switch>
         </Router>
