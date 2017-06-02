@@ -7,6 +7,7 @@ import style from './content.css'
 import Password from './password'
 
 function Body({profile}) {
+    console.log('profile', profile.toJS())
     return (
         <div className={style.body}>
             <div className={style.flx1}>
@@ -16,7 +17,7 @@ function Body({profile}) {
                 <Info details={profile} />
             </div>
             <div className={style.flx3}>
-                <Password isEdit={true} id={profile.get('userID')} />
+                <Password isEdit={true} username={profile.get('username')} id={profile.get('userID')} />
             </div>
         </div>
     )

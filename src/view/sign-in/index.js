@@ -17,7 +17,7 @@ function Page({formData, EditPassword, EditUsername, SignIn}) {
             <div className={style.body}>
                 <div className={style.container}>
                     <div className={style.title}>
-                        SETARA ADMIN
+                        <img className={style.logo} src={'/img/ruloBlue.png'} alt={'Rulo'} />
                     </div>
                     <form onKeyDown={OnKeyDown}>
                         <div className={style.inputWrapper}>

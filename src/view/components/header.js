@@ -35,7 +35,9 @@ function Header({header, verification, PickHeader}) {
     return (
         <WithActions actions={[['ws/countVerification']]}>
             <div className={style.wrapper}>
-                <span className={style.title}>RULO</span>
+                <span className={style.title}>
+                    <img className={style.logo} src="/img/ruloLogo.png" alt="RULO" />
+                </span>
                 <ul className={style.menu}>{menusRendered}</ul>
             </div>
         </WithActions>
