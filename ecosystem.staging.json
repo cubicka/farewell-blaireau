@@ -29,6 +29,14 @@
             "repo": "git@github.com:cubicka/farewell-blaireau.git",
             "path" : "/home/ubuntu/admin",
             "post-deploy" : "npm i && npm run build && pm2 startOrRestart ecosystem.staging.json --env production"
+        },
+        "live" : {
+            "user" : "ubuntu",
+            "host" : "ec2-52-221-235-125.ap-southeast-1.compute.amazonaws.com",
+            "ref" : "origin/master",
+            "repo": "git@github.com:cubicka/farewell-blaireau.git",
+            "path" : "/home/ubuntu/admin",
+            "post-deploy" : "npm i && npm run build && pm2 startOrRestart ecosystem.staging.json --env production"
         }
     }
 }
