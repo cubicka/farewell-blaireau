@@ -4,11 +4,11 @@ import Icon from 'react-fontawesome'
 import {WithLoading as Button} from '../components/button'
 import style from './editForm.css'
 
-function Item({idx, item, EditItem}) {
+function Item({idx, item, EditItem, RemoveItem}) {
     return (
         <div className={style.row}>
             <span className={style.colAction}>
-                <Icon name={'trash'} className={style.deleteBtn} />
+                <Icon name={'trash'} className={style.deleteBtn} onClick={RemoveItem(idx)} />
             </span>
             <span className={style.colSKU}>
                 <input type={'text'} value={item.get('sku')} disabled onChange={EditItem(idx, 'sku')} />
@@ -26,7 +26,7 @@ function Item({idx, item, EditItem}) {
     )
 }
 
-function EditForm({isLoading, isSaving, list, sku, EditItem, EditSKU, FindSKU, SaveSKU}) {
+function EditForm({isLoading, isSaving, list, sku, EditItem, EditSKU, FindSKU, RemoveItem, SaveSKU}) {
     function OnKeyDown(e) {
         if (e.keyCode === 13) {
             FindSKU()
@@ -35,7 +35,7 @@ function EditForm({isLoading, isSaving, list, sku, EditItem, EditSKU, FindSKU, S
 
     console.log('sku', list.toJS())
     const itemsRendered = list.map((item, idx) => {
-        return <Item key={idx} idx={idx} item={item} EditItem={EditItem} />
+        return <Item key={idx} idx={idx} item={item} EditItem={EditItem} RemoveItem={RemoveItem} />
     })
 
     return (
@@ -77,6 +77,7 @@ const actions = {
     FindSKU: () => ["sku/findSKU"],
     SaveSKU: () => ["sku/saveSKU"],
     EditItem: (idx, attr) => (e) => ["/sku/formItem/edit", {idx, attr, val: e.target.value}],
+    RemoveItem: (idx) => () => ['/sku/formItem/remove', {idx}],
 }
 
 export default Om(states, actions)(EditForm)

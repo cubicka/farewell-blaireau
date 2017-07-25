@@ -40,6 +40,7 @@ const events = {
 
     "form/reset": (state, action) => (state.update('form', (form) => (fromJS([])))),
     "formItem/edit": EditFormItem,
+    "formItem/remove": RemoveForm,
 }
 
 function UpdateItems(state, {items}) {
@@ -69,6 +70,12 @@ function UpdateForm(state, {items}) {
             if (haveFound) return accum
             return accum.push(fromJS(item))
         }, form)
+    })
+}
+
+function RemoveForm(state, {idx}) {
+    return state.update('form', (form) => {
+        return form.delete(idx)
     })
 }
 
