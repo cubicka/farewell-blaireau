@@ -12,6 +12,8 @@ function List() {
             dispatch(['/retail/update', {payload: {
                 isFetching: false,
                 total: result.count,
+            }}])
+            dispatch(['/retail/updateList', {payload: {
                 list: result.buyers,
             }}])
         })

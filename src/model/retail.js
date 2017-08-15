@@ -36,6 +36,7 @@ const events = {
         })
     },
     update: (state, action) => (state.mergeDeep(action.payload)),
+    updateList: (state, action) => (state.merge(action.payload)),
 }
 
 export default {
