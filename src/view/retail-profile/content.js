@@ -16,7 +16,7 @@ function Body({profile}) {
                 <Info details={profile} />
             </div>
             <div className={style.flx3}>
-                <Password isEdit={true} id={profile.get('userID')} />
+                <Password isEdit={true} username={profile.get('username')} id={profile.get('userID')} />
             </div>
         </div>
     )

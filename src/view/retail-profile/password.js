@@ -3,11 +3,19 @@ import {WithLoading} from '../components/button'
 import Om from '../om'
 import style from './info.css'
 
-function Password({id, isChangingPassword, isEdit, password, ChangePassword, Save, StartEdit, StopEdit}) {
+function Password({id, isChangingPassword, isEdit, password, username, ChangePassword, Save, StartEdit, StopEdit}) {
     return(
         <div className={style.wrapper +' '+style.borderLeft}>
             <div className={style.marginLine}>
                 <div className={style.head}>Kelola Password</div>
+                <div>
+                    <div className={style.title}>
+                        Username
+                    </div>
+                    <div className={style.info} style={{marginBottom: 5}}>
+                        {username}
+                    </div>
+                </div>
                 {
                     !isEdit &&
                     <div>
