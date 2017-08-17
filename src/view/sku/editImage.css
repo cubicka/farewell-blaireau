@@ -97,3 +97,14 @@
     position: relative;
     top: -10px;
 }
+
+.saveBtn {
+    background-color: #4ea65f;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}

@@ -25,7 +25,7 @@ function Item({item, Upload}) {
     )
 }
 
-function EditImage({filter, list, currentPage, pageTotal, EditFilter, NextPage, PrevPage, UploadImage}) {
+function EditImage({filter, list, currentPage, pageTotal, EditFilter, FetchNoImage, NextPage, PrevPage, UploadImage}) {
     const itemsRendered = list.map((item) => {
         return <Item key={item.get('id')} item={item} Upload={UploadImage} />
     })
@@ -33,6 +33,9 @@ function EditImage({filter, list, currentPage, pageTotal, EditFilter, NextPage, 
     return (
         <div className={style.wrapper}>
             <span className={style.title}>Image Manager</span>
+            <span className={style.saveBtn} onClick={FetchNoImage}>
+                Only No Image
+            </span>
             <span className={style.collectionWrapper}>
                 {itemsRendered}
                 {
@@ -70,9 +73,9 @@ const states = {
 
 const actions = {
     EditFilter: (e) => ['sku/editImageFilter', e.target.value],
+    FetchNoImage: () => ['sku/noImageList'],
     NextPage: () => ['sku/nextImagePage'],
     PrevPage: () => ['sku/prevImagePage'],
-
     UploadImage: (id, name) => () => ['sku/uploadImage', id, name]
 }
 

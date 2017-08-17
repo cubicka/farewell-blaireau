@@ -85,6 +85,19 @@ function Images() {
     }
 }
 
+function NoImages() {
+    return (dispatch, getState) => {
+        return Get(dispatch, '/admin/katalog/no-image')
+        .then((result) => {
+            dispatch(['/sku/images/update', result])
+            dispatch(['/sku/view/images/update', {pageNum: 1}])
+        })
+        .catch((err) => {
+            console.log('err', err)
+        })
+    }
+}
+
 function EditImageFilter(newFilterKey) {
     return (dispatch) => {
         dispatch(["/sku/view/images/update", {filterKey: newFilterKey}])
@@ -195,6 +208,7 @@ export default {
     prevListPage: PrevListPage,
 
     images: Images,
+    noImageList: NoImages,
     editImageFilter: EditImageFilter,
     nextImagePage: NextImagePage,
     prevImagePage: PrevImagePage,

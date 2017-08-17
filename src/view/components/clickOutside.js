@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class ClickOutside extends Component {
     render() {
+        // eslint-disable-next-line
         const { children, onClickOutside, ...props } = this.props
         return <div {...props} ref={ref => this.container = ref}>{children}</div>
     }
