@@ -20,7 +20,7 @@ function Item({item, Upload}) {
                     <Icon name={'upload'} style={{opacity: 0.5}} />
                 </label>
             </span>
-            <span className={style.imageName}>{item.get('name')}</span>
+            <span className={style.imageName}>{item.get('name') + ' --- ' + item.get('description') + ' --- ' + item.get('sku')}</span>
         </form>
     )
 }
