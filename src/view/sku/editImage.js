@@ -3,6 +3,7 @@ import {fromJS} from 'immutable'
 import Om from '../om'
 import Icon from 'react-fontawesome'
 import style from './editImage.css'
+import ruloMapping from './ruloMapping'
 
 function Item({edited, isEdit, isSaving, item, PartialUpdate, StartEdit, StopEdit, UpdateEdit, Upload}) {
     function HandleStopEdit(attr) {
@@ -15,6 +16,10 @@ function Item({edited, isEdit, isSaving, item, PartialUpdate, StartEdit, StopEdi
     }
 
     const name = `imageForm${item.get('id')}`
+    const ruloItem = Object.keys(ruloMapping).find((key) => {
+        return ruloMapping[key].id === item.get('id')
+    })
+
     return (
         <div className={style.imageWrapper}>
             <form id={name}>
@@ -44,6 +49,10 @@ function Item({edited, isEdit, isSaving, item, PartialUpdate, StartEdit, StopEdi
                 isEdit.get('description') ?
                 <input className={style.imageEdit} value={edited.get('description')} onKeyDown={HandleStopEdit('description')} onChange={(e) => {UpdateEdit('description', e.target.value)}} onBlur={() => {StopEdit('description')}} disabled={isSaving.get('description')} /> :
                 <div onClick={() => {StartEdit('description')}}>{item.get('description').trim() || "NO DESCRIPTION!"}</div>
+            }
+            {
+                ruloItem &&
+                <div>{`(SUBUR: ${ruloMapping[ruloItem].baseName})`}</div>
             }
         </div>
     )
