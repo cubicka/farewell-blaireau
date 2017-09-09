@@ -32,10 +32,11 @@
 
 .collectionWrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .imageWrapper {
-    flex: 1 1 0;
+    flex: 1 1 160px;
     padding: 5px;
     border: solid 1px #d0d3d7;
     background-color: #fff;
@@ -107,4 +108,21 @@
     color: #fff;
     cursor: pointer;
     font-size: 14px;
+}
+
+.categoryBtn {
+    background-color: #4ea65f;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.imageEdit {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }

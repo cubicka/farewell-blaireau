@@ -201,6 +201,52 @@ function SaveSKU() {
     }
 }
 
+function GetAllCategories() {
+    return (dispatch) => {
+        return Get(dispatch, '/admin/katalog/category')
+        .then((result) => {
+            dispatch(['/sku/categories/update', result.categories])
+        })
+        .catch((err) => {
+            console.log('err', err)
+        })
+    }
+}
+
+function FetchImageByCategory(category) {
+    return (dispatch) => {
+        return Get(dispatch, '/admin/katalog/list-by-category', {category})
+        .then((result) => {
+            // console.log('res', result)
+            dispatch(['/sku/images/update', result])
+            dispatch(['/sku/view/images/update', {pageNum: 1}])
+        })
+        .catch((err) => {
+            console.log('err', err)
+        })
+    }
+}
+
+function PartialUpdate(id, attr) {
+    return (dispatch, getState) => {
+        const editedValue = getState().sku.getIn(['edited', id.toString(), attr])
+
+        if (!editedValue) return
+
+        dispatch(['/sku/triage/startSave', {id, attr}])
+        return Post(dispatch, '/admin/katalog/bulkUpdate', {items: [{id, [attr]: editedValue}]})
+        .then((result) => {
+            dispatch(['/sku/items/update', {items: [{id, [attr]: editedValue}]}])
+            dispatch(['/sku/triage/stopSave', {id, attr}])
+            dispatch(['/sku/triage/stopEdit', {id, attr}])
+        })
+        .catch((err) => {
+            console.log('err', err)
+            dispatch(['/sku/triage/stopEdit', {id, attr}])
+        })
+    }
+}
+
 export default {
     editListFilter: EditListFilter,
     list: List,
@@ -218,4 +264,8 @@ export default {
     editFormSKU: EditFormSKU,
     findSKU: FindSKU,
     saveSKU: SaveSKU,
+
+    categories: GetAllCategories,
+    imageByCategory: FetchImageByCategory,
+    partialUpdate: PartialUpdate,
 }

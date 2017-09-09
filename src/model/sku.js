@@ -23,7 +23,11 @@ const initialState = {
             isLoading: false,
             isSaving: false,
         }
-    }
+    },
+    categories: [],
+    isEdit: {},
+    edited: {},
+    isSaving: {},
 }
 
 const events = {
@@ -41,6 +45,35 @@ const events = {
     "form/reset": (state, action) => (state.update('form', (form) => (fromJS([])))),
     "formItem/edit": EditFormItem,
     "formItem/remove": RemoveForm,
+
+    "categories/update": (state, action) => (state.set('categories', fromJS(action))),
+    "triage/startEdit": (state, action) => {
+        const {id, attr} = action
+        const editedItem = state.getIn(['items', id.toString()])
+
+        return state.mergeDeep({
+            isEdit: {[id]: {[attr]: true}},
+            edited: {[id]: {[attr]: editedItem.get(attr)}},
+        })
+    },
+    "triage/stopEdit": (state, action) => {
+        const {id, attr} = action
+        return state.mergeDeep({isEdit: {[id]: {[attr]: false}}})
+    },
+    "triage/updateEdit": (state, action) => {
+        const {id, attr, value} = action
+        return state.mergeDeep({edited: {[id]: {[attr]: value}}})
+    },
+    "triage/startSave": (state, action) => {
+        const {id, attr} = action
+        return state.mergeDeep({
+            isSaving: {[id]: {[attr]: true}},
+        })
+    },
+    "triage/stopSave": (state, action) => {
+        const {id, attr} = action
+        return state.mergeDeep({isSaving: {[id]: {[attr]: false}}})
+    },
 }
 
 function UpdateItems(state, {items}) {

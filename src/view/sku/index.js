@@ -8,7 +8,7 @@ import style from './style.css'
 
 function SKUPage() {
     return (
-        <WithActions actions={[["sku/list"], ["sku/images"]]}>
+        <WithActions actions={[["sku/list"], ["sku/images"], ["sku/categories"]]}>
             <Page header={'sku'} className={style.wrapper}>
                 <div className={style.wrapper}>
                     <EditForm />
