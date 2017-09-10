@@ -46,9 +46,14 @@ function Item({edited, isEdit, isSaving, item, PartialUpdate, StartEdit, StopEdi
                 <div onClick={() => {StartEdit('name')}}>{item.get('name')}</div>
             }
             {
+                isEdit.get('category') ?
+                <input className={style.imageEdit} value={edited.get('category')} onKeyDown={HandleStopEdit('category')} onChange={(e) => {UpdateEdit('category', e.target.value)}} onBlur={() => {StopEdit('category')}} disabled={isSaving.get('category')} /> :
+                <div onClick={() => {StartEdit('category')}}>Kategori: {item.get('category').trim()}</div>
+            }
+            {
                 isEdit.get('description') ?
                 <input className={style.imageEdit} value={edited.get('description')} onKeyDown={HandleStopEdit('description')} onChange={(e) => {UpdateEdit('description', e.target.value)}} onBlur={() => {StopEdit('description')}} disabled={isSaving.get('description')} /> :
-                <div onClick={() => {StartEdit('description')}}>{item.get('description').trim() || "NO DESCRIPTION!"}</div>
+                <div onClick={() => {StartEdit('description')}}>Deskripsi: {item.get('description').trim() || "NO DESCRIPTION!"}</div>
             }
             {
                 ruloItem &&

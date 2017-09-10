@@ -19327,5 +19327,764 @@
             "description": "Kraker Lapis Keju",
             "priority": 0
         }
+    },
+    "SUPERMIE AB (SPAB) - 40BKS": {
+        "id": 7725,
+        "baseName": "SUPERMIE AB (SPAB) - 40BKS",
+        "katalog": {
+            "id": 7725,
+            "sku": "SUBUR-D091022",
+            "name": "SUPERMIE AB (SPAB) - 40BKS",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "CABE IJO GORENG INDOMIE": {
+        "id": 7731,
+        "baseName": "CABE IJO GORENG INDOMIE",
+        "katalog": {
+            "id": 7731,
+            "sku": "SUBUR-D091028",
+            "name": "CABE IJO GORENG INDOMIE",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ESSE  MILD MENTHOL": {
+        "id": 7748,
+        "baseName": "ESSE  MILD MENTHOL",
+        "katalog": {
+            "id": 7748,
+            "sku": "SUBUR-D091045",
+            "name": "ESSE MILD MENTHOL",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ESSE  MENTHOL YG BARU": {
+        "id": 7750,
+        "baseName": "ESSE  MENTHOL YG BARU",
+        "katalog": {
+            "id": 7750,
+            "sku": "SUBUR-D091047",
+            "name": "ESSE MENTHOL YG BARU",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ESSE POP BERRY": {
+        "id": 7752,
+        "baseName": "ESSE POP BERRY",
+        "katalog": {
+            "id": 7752,
+            "sku": "SUBUR-D091049",
+            "name": "ESSE POP BERRY",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "CHOCO PIE  RP 2000": {
+        "id": 7796,
+        "baseName": "CHOCO PIE  RP 2000",
+        "katalog": {
+            "id": 7796,
+            "sku": "SUBUR-D091093",
+            "name": "CHOCO PIE RP 2000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KC 2 KELINCI  100GR/5000": {
+        "id": 7809,
+        "baseName": "KC 2 KELINCI  100GR/5000",
+        "katalog": {
+            "id": 7809,
+            "sku": "SUBUR-D0910106",
+            "name": "KC 2 KELINCI 100GR/5000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "NABATI ROL M1 2000": {
+        "id": 7831,
+        "baseName": "NABATI ROL M1 2000",
+        "katalog": {
+            "id": 7831,
+            "sku": "SUBUR-D0910128",
+            "name": "NABATI ROL M1 2000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SOFT PIE 24 PAK": {
+        "id": 7893,
+        "baseName": "SOFT PIE 24 PAK",
+        "katalog": {
+            "id": 7893,
+            "sku": "SUBUR-D0910190",
+            "name": "SOFT PIE 24 PAK",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "MOMOGI  MINI JG BAKAR": {
+        "id": 7897,
+        "baseName": "MOMOGI  MINI JG BAKAR",
+        "katalog": {
+            "id": 7897,
+            "sku": "SUBUR-D0910194",
+            "name": "MOMOGI MINI JG BAKAR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "MOMOGI HATI CHEESE": {
+        "id": 7898,
+        "baseName": "MOMOGI HATI CHEESE",
+        "katalog": {
+            "id": 7898,
+            "sku": "SUBUR-D0910195",
+            "name": "MOMOGI HATI CHEESE",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "TIM TAM  MAXI CHOCO 19 GR": {
+        "id": 7903,
+        "baseName": "TIM TAM  MAXI CHOCO 19 GR",
+        "katalog": {
+            "id": 7903,
+            "sku": "SUBUR-D0910200",
+            "name": "TIM TAM MAXI CHOCO 19 GR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "NABATI STAW RP 2000": {
+        "id": 7925,
+        "baseName": "NABATI STAW RP 2000",
+        "katalog": {
+            "id": 7925,
+            "sku": "SUBUR-D0910222",
+            "name": "NABATI STAW RP 2000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "NEXTAR NASTAR 8BOX X10 PCS": {
+        "id": 7938,
+        "baseName": "NEXTAR NASTAR 8BOX X10 PCS",
+        "katalog": {
+            "id": 7938,
+            "sku": "SUBUR-D0910235",
+            "name": "NEXTAR NASTAR 8BOX X10 PCS",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ROMA ABON RCG 12X10": {
+        "id": 7942,
+        "baseName": "ROMA ABON RCG 12X10",
+        "katalog": {
+            "id": 7942,
+            "sku": "SUBUR-D0910239",
+            "name": "ROMA ABON RCG 12X10",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "BIG  BABOL SAK": {
+        "id": 7947,
+        "baseName": "BIG  BABOL SAK",
+        "katalog": {
+            "id": 7947,
+            "sku": "SUBUR-D0910244",
+            "name": "BIG BABOL SAK",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "PILUS MIE GORENG 6 PAK": {
+        "id": 7951,
+        "baseName": "PILUS MIE GORENG 6 PAK",
+        "katalog": {
+            "id": 7951,
+            "sku": "SUBUR-D0910248",
+            "name": "PILUS MIE GORENG 6 PAK",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "MENTOS SAK BUAH": {
+        "id": 7952,
+        "baseName": "MENTOS SAK BUAH",
+        "katalog": {
+            "id": 7952,
+            "sku": "SUBUR-D0910249",
+            "name": "MENTOS SAK BUAH",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "GOOD DAY BOTOL AVOCADO/24 BTL": {
+        "id": 8029,
+        "baseName": "GOOD DAY BOTOL AVOCADO/24 BTL",
+        "katalog": {
+            "id": 8029,
+            "sku": "SUBUR-D0910326",
+            "name": "GOOD DAY BOTOL AVOCADO/24 BTL",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "FRUIT TEA APLLE 500ML": {
+        "id": 8030,
+        "baseName": "FRUIT TEA APLLE 500ML",
+        "katalog": {
+            "id": 8030,
+            "sku": "SUBUR-D0910327",
+            "name": "FRUIT TEA APLLE 500ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "COOLANT BTL 350 ML": {
+        "id": 8032,
+        "baseName": "COOLANT BTL 350 ML",
+        "katalog": {
+            "id": 8032,
+            "sku": "SUBUR-D0910329",
+            "name": "COOLANT BTL 350 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "F & N  SODA WATER": {
+        "id": 8051,
+        "baseName": "F & N  SODA WATER",
+        "katalog": {
+            "id": 8051,
+            "sku": "SUBUR-D0910348",
+            "name": "F & N SODA WATER",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KACANG IJO ULTRA 200 ML": {
+        "id": 8062,
+        "baseName": "KACANG IJO ULTRA 200 ML",
+        "katalog": {
+            "id": 8062,
+            "sku": "SUBUR-D0910359",
+            "name": "KACANG IJO ULTRA 200 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "AJE  JERUK  425 ML": {
+        "id": 8069,
+        "baseName": "AJE  JERUK  425 ML",
+        "katalog": {
+            "id": 8069,
+            "sku": "SUBUR-D0910366",
+            "name": "AJE JERUK 425 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "COCACOLA SLIM  2LSN": {
+        "id": 8070,
+        "baseName": "COCACOLA SLIM  2LSN",
+        "katalog": {
+            "id": 8070,
+            "sku": "SUBUR-D0910367",
+            "name": "COCACOLA SLIM 2LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "F & N SARSI": {
+        "id": 8076,
+        "baseName": "F & N SARSI",
+        "katalog": {
+            "id": 8076,
+            "sku": "SUBUR-D0910373",
+            "name": "F & N SARSI",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "HEMAVITON ACTION": {
+        "id": 8134,
+        "baseName": "HEMAVITON ACTION",
+        "katalog": {
+            "id": 8134,
+            "sku": "SUBUR-D0910431",
+            "name": "HEMAVITON ACTION",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "HOTIN CREAM ISI 5 SAC": {
+        "id": 8241,
+        "baseName": "HOTIN CREAM ISI 5 SAC",
+        "katalog": {
+            "id": 8241,
+            "sku": "SUBUR-D0910538",
+            "name": "HOTIN CREAM ISI 5 SAC",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KOMIX DWS CAMPUR": {
+        "id": 8245,
+        "baseName": "KOMIX DWS CAMPUR",
+        "katalog": {
+            "id": 8245,
+            "sku": "SUBUR-D0910542",
+            "name": "KOMIX DWS CAMPUR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "INDOFOOD  AYAM KAMPUNG": {
+        "id": 8265,
+        "baseName": "INDOFOOD  AYAM KAMPUNG",
+        "katalog": {
+            "id": 8265,
+            "sku": "SUBUR-D0910562",
+            "name": "INDOFOOD AYAM KAMPUNG",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SIMAS SAK (200GR)": {
+        "id": 8269,
+        "baseName": "SIMAS SAK (200GR)",
+        "katalog": {
+            "id": 8269,
+            "sku": "SUBUR-D0910566",
+            "name": "SIMAS SAK (200GR)",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "BANGO KECAP P  60  ML": {
+        "id": 8284,
+        "baseName": "BANGO KECAP P  60  ML",
+        "katalog": {
+            "id": 8284,
+            "sku": "SUBUR-D0910581",
+            "name": "BANGO KECAP P 60 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KETUMBAR  BUBUK 8X6 LSN": {
+        "id": 8297,
+        "baseName": "KETUMBAR  BUBUK 8X6 LSN",
+        "katalog": {
+            "id": 8297,
+            "sku": "SUBUR-D0910594",
+            "name": "KETUMBAR BUBUK 8X6 LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "AGAR2 SG CAMPUR": {
+        "id": 8300,
+        "baseName": "AGAR2 SG CAMPUR",
+        "katalog": {
+            "id": 8300,
+            "sku": "SUBUR-D0910597",
+            "name": "AGAR2 SG CAMPUR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SAMBAL TERASI BTL 200 GR  2 LSN": {
+        "id": 8308,
+        "baseName": "SAMBAL TERASI BTL 200 GR  2 LSN",
+        "katalog": {
+            "id": 8308,
+            "sku": "SUBUR-D0910605",
+            "name": "SAMBAL TERASI BTL 200 GR 2 LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SHAMPO MOTOR CARRERA": {
+        "id": 8332,
+        "baseName": "SHAMPO MOTOR CARRERA",
+        "katalog": {
+            "id": 8332,
+            "sku": "SUBUR-D0910629",
+            "name": "SHAMPO MOTOR CARRERA",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "REAL GOOD ANGGUR 125 ML": {
+        "id": 8361,
+        "baseName": "REAL GOOD ANGGUR 125 ML",
+        "katalog": {
+            "id": 8361,
+            "sku": "SUBUR-D0910658",
+            "name": "REAL GOOD ANGGUR 125 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "FF CAIR BTL 190,STW 2 LSN": {
+        "id": 8362,
+        "baseName": "FF CAIR BTL 190,STW 2 LSN",
+        "katalog": {
+            "id": 8362,
+            "sku": "SUBUR-D0910659",
+            "name": "FF CAIR BTL 190,STW 2 LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "FF CAIR BTL 190 ML,CK 2LSN": {
+        "id": 8366,
+        "baseName": "FF CAIR BTL 190 ML,CK 2LSN",
+        "katalog": {
+            "id": 8366,
+            "sku": "SUBUR-D0910663",
+            "name": "FF CAIR BTL 190 ML,CK 2LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "REAL GOOD ORANGE 125 ML": {
+        "id": 8367,
+        "baseName": "REAL GOOD ORANGE 125 ML",
+        "katalog": {
+            "id": 8367,
+            "sku": "SUBUR-D0910664",
+            "name": "REAL GOOD ORANGE 125 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "MAX TEA TARIK 5BX3LBR": {
+        "id": 8380,
+        "baseName": "MAX TEA TARIK 5BX3LBR",
+        "katalog": {
+            "id": 8380,
+            "sku": "SUBUR-D0910677",
+            "name": "MAX TEA TARIK 5BX3LBR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "TOP  KOPI PLUS": {
+        "id": 8403,
+        "baseName": "TOP  KOPI PLUS",
+        "katalog": {
+            "id": 8403,
+            "sku": "SUBUR-D0910700",
+            "name": "TOP KOPI PLUS",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "FRESCO KOPI SUSU 8LBR": {
+        "id": 8406,
+        "baseName": "FRESCO KOPI SUSU 8LBR",
+        "katalog": {
+            "id": 8406,
+            "sku": "SUBUR-D0910703",
+            "name": "FRESCO KOPI SUSU 8LBR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "TEH  CELUP BOTOL BOX 25": {
+        "id": 8407,
+        "baseName": "TEH  CELUP BOTOL BOX 25",
+        "katalog": {
+            "id": 8407,
+            "sku": "SUBUR-D0910704",
+            "name": "TEH CELUP BOTOL BOX 25",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "MINYAK SAYUR": {
+        "id": 8448,
+        "baseName": "MINYAK SAYUR",
+        "katalog": {
+            "id": 8448,
+            "sku": "SUBUR-D0910745",
+            "name": "MINYAK SAYUR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "TALI RAFIA KORMA": {
+        "id": 8477,
+        "baseName": "TALI RAFIA KORMA",
+        "katalog": {
+            "id": 8477,
+            "sku": "SUBUR-D0910774",
+            "name": "TALI RAFIA KORMA",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "EVEREADY K": {
+        "id": 8500,
+        "baseName": "EVEREADY K",
+        "katalog": {
+            "id": 8500,
+            "sku": "SUBUR-D0910797",
+            "name": "EVEREADY K",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ATTACK SOFT 48 GR,RP1000": {
+        "id": 8542,
+        "baseName": "ATTACK SOFT 48 GR,RP1000",
+        "katalog": {
+            "id": 8542,
+            "sku": "SUBUR-D0910839",
+            "name": "ATTACK SOFT 48 GR,RP1000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SUPER PEL P 400ML": {
+        "id": 8587,
+        "baseName": "SUPER PEL P 400ML",
+        "katalog": {
+            "id": 8587,
+            "sku": "SUBUR-D0910884",
+            "name": "SUPER PEL P 400ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KISPRAY  REFIL MRH 300/24": {
+        "id": 8589,
+        "baseName": "KISPRAY  REFIL MRH 300/24",
+        "katalog": {
+            "id": 8589,
+            "sku": "SUBUR-D0910886",
+            "name": "KISPRAY REFIL MRH 300/24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "PROCLEAN SACH": {
+        "id": 8599,
+        "baseName": "PROCLEAN SACH",
+        "katalog": {
+            "id": 8599,
+            "sku": "SUBUR-D0910896",
+            "name": "PROCLEAN SACH",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SOFTENER 1XBLS Rp.500 6X4LSN": {
+        "id": 8604,
+        "baseName": "SOFTENER 1XBLS Rp.500 6X4LSN",
+        "katalog": {
+            "id": 8604,
+            "sku": "SUBUR-D0910901",
+            "name": "SOFTENER 1XBLS Rp.500 6X4LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KISPRAY SACH GOLD 8X 6LSN": {
+        "id": 8605,
+        "baseName": "KISPRAY SACH GOLD 8X 6LSN",
+        "katalog": {
+            "id": 8605,
+            "sku": "SUBUR-D0910902",
+            "name": "KISPRAY SACH GOLD 8X 6LSN",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "RINSO MATIC CAIR RP 2000": {
+        "id": 8614,
+        "baseName": "RINSO MATIC CAIR RP 2000",
+        "katalog": {
+            "id": 8614,
+            "sku": "SUBUR-D0910911",
+            "name": "RINSO MATIC CAIR RP 2000",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "RAFIKA BOTOL  450 ML": {
+        "id": 8616,
+        "baseName": "RAFIKA BOTOL  450 ML",
+        "katalog": {
+            "id": 8616,
+            "sku": "SUBUR-D0910913",
+            "name": "RAFIKA BOTOL 450 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "RINSO CAIR REF 400 ML /24": {
+        "id": 8617,
+        "baseName": "RINSO CAIR REF 400 ML /24",
+        "katalog": {
+            "id": 8617,
+            "sku": "SUBUR-D0910914",
+            "name": "RINSO CAIR REF 400 ML /24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SLEEK LAUDRY  POUCH 450 ML": {
+        "id": 8619,
+        "baseName": "SLEEK LAUDRY  POUCH 450 ML",
+        "katalog": {
+            "id": 8619,
+            "sku": "SUBUR-D0910916",
+            "name": "SLEEK LAUDRY POUCH 450 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "HARPIC 200 ML": {
+        "id": 8622,
+        "baseName": "HARPIC 200 ML",
+        "katalog": {
+            "id": 8622,
+            "sku": "SUBUR-D0910919",
+            "name": "HARPIC 200 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "VANISH BOTOL 180 ML/24": {
+        "id": 8625,
+        "baseName": "VANISH BOTOL 180 ML/24",
+        "katalog": {
+            "id": 8625,
+            "sku": "SUBUR-D0910922",
+            "name": "VANISH BOTOL 180 ML/24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KISPRAY REFIL BIRU 300/24": {
+        "id": 8635,
+        "baseName": "KISPRAY REFIL BIRU 300/24",
+        "katalog": {
+            "id": 8635,
+            "sku": "SUBUR-D0910932",
+            "name": "KISPRAY REFIL BIRU 300/24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "KISPRAY REFI KNG 300M/24": {
+        "id": 8636,
+        "baseName": "KISPRAY REFI KNG 300M/24",
+        "katalog": {
+            "id": 8636,
+            "sku": "SUBUR-D0910933",
+            "name": "KISPRAY REFI KNG 300M/24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "DETTOL SABUN CAIR 250 ML/24": {
+        "id": 8676,
+        "baseName": "DETTOL SABUN CAIR 250 ML/24",
+        "katalog": {
+            "id": 8676,
+            "sku": "SUBUR-D0910973",
+            "name": "DETTOL SABUN CAIR 250 ML/24",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "GATSBY COLOGNE  125 ML": {
+        "id": 8683,
+        "baseName": "GATSBY COLOGNE  125 ML",
+        "katalog": {
+            "id": 8683,
+            "sku": "SUBUR-D0910980",
+            "name": "GATSBY COLOGNE 125 ML",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "PANTENE COND 20": {
+        "id": 8708,
+        "baseName": "PANTENE COND 20",
+        "katalog": {
+            "id": 8708,
+            "sku": "SUBUR-D09101005",
+            "name": "PANTENE COND 20",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "ZINCH BOTOL": {
+        "id": 8770,
+        "baseName": "ZINCH BOTOL",
+        "katalog": {
+            "id": 8770,
+            "sku": "SUBUR-D09101067",
+            "name": "ZINCH BOTOL",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "BE FANCY  FACIAL 600 GR": {
+        "id": 8777,
+        "baseName": "BE FANCY  FACIAL 600 GR",
+        "katalog": {
+            "id": 8777,
+            "sku": "SUBUR-D09101074",
+            "name": "BE FANCY FACIAL 600 GR",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "BE FANCY CARELESS  ROLL": {
+        "id": 8778,
+        "baseName": "BE FANCY CARELESS  ROLL",
+        "katalog": {
+            "id": 8778,
+            "sku": "SUBUR-D09101075",
+            "name": "BE FANCY CARELESS ROLL",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "SE DSS 12 / 10+2 REFIL": {
+        "id": 8832,
+        "baseName": "SE DSS 12 / 10+2 REFIL",
+        "katalog": {
+            "id": 8832,
+            "sku": "SUBUR-D09101129",
+            "name": "SE DSS 12 / 10+2 REFIL",
+            "category": "hahahaha",
+            "description": ""
+        }
+    },
+    "DUNHIL KING - MERAH": {
+        "id": 8891,
+        "baseName": "DUNHIL KING - MERAH",
+        "katalog": {
+            "id": 8891,
+            "sku": "SUBUR-D09101188",
+            "name": "DUNHIL KING - MERAH",
+            "category": "hahahaha",
+            "description": ""
+        }
     }
 }
