@@ -12,8 +12,8 @@ import ItemTable from './itemTable'
 import Om from '../om'
 import style from './style.css'
 
-function Dashboard({details, isDownloading, isFetching, startDate, endDate, ChangeDate, Download, Refresh}) {
-    const {created, accepted, cancelled, delivered, totalPrices, orders, items} = details
+function Dashboard({details, isDownloading, isFetching, startDate, endDate, revenue, ChangeDate, Download, Refresh}) {
+    const {created, accepted, cancelled, delivered, orders, items} = details
     const nOrders = created + accepted + cancelled + delivered
 
     return (
@@ -40,7 +40,7 @@ function Dashboard({details, isDownloading, isFetching, startDate, endDate, Chan
                     </div>
                     <div className={style.row}>
                         <OverviewCard idx={0} val={nOrders} label={'Jumlah Order'} />
-                        <OverviewCard idx={1} val={ToPrice(totalPrices)} label={'Omset'} />
+                        <OverviewCard idx={1} val={ToPrice(revenue || 0)} label={'Omset'} />
                         <OverviewCard idx={2} val={delivered} label={'Order Sukses'} />
                         <OverviewCard idx={3} val={cancelled} label={'Order Ditolak'} />
                     </div>
@@ -63,6 +63,7 @@ const states = {
     isFetching: "/dashboard/isFetching",
     startDate: "/dashboard/startDate",
     endDate: "/dashboard/endDate",
+    revenue: "/dashboard/revenue",
 }
 
 const actions = {

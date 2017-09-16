@@ -8,6 +8,7 @@ class WithActions extends Component {
             this.props.dispatch(args)
         })
     }
+
     render() {
         const {children} = this.props
         return (<div>{children}</div>)

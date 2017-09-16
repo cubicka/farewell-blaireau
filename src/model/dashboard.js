@@ -12,6 +12,8 @@ const initialState = {
     popularItems: [],
     startDate: lastWeek,
     endDate: new Date(),
+    revenue: 0,
+    allOrders: [],
 }
 
 const events = {
